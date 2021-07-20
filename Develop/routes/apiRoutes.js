@@ -20,8 +20,8 @@ router.post('/notes', (req, res) => {
   res.json(database);
 });
 
-router.delete('/notes/:id', (req, res) => {
-  let database =JSON.parse(fs.readFileSync('../db/db.json'));
-});
+// router.delete('/notes/:id', (req, res) => {
+//   let database =JSON.parse(fs.readFileSync('../db/db.json'));
+// });
 
 module.exports = router;
