@@ -27,9 +27,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
   ## _Email Me_: aislynn.rose@gmail.com
 
-  ## Preview: ![Screenshot]()
-
-  ## Sample: ![GIF]()
+  ## Preview: ![Screenshot](./Assets/Capture1.PNG)
+  ## Preview: ![Screenshot](./Assets/Capture2.PNG)
 
   # Technologies Used
   * HTML
