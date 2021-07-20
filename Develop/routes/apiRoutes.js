@@ -12,16 +12,13 @@ router.get('/notes', (req, res) => {
 
 router.post('/notes', (req, res) => {
   let database = JSON.parse(fs.readFileSync('../db/db.json'));
-  const initNote = {
+  const newNote = {
     ...req.body, id: uuidv1(),
   };
-  database.push(initNote);
+  database.push(newNote);
   fs.writeFileSync('../db/db.json', JSON.stringify(database));
   res.json(database);
 });
 
-// router.delete('/notes/:id', (req, res) => {
-//   let database =JSON.parse(fs.readFileSync('../db/db.json'));
-// });
 
 module.exports = router;
